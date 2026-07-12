@@ -12,14 +12,10 @@ class RequestUtils {
 	) {
 		let authentication = this.getNodeParameter('authentication', 0) as string;
 
-		console.log('RequestUtils originRequest authentication = ', authentication);
-
 		let additionalCredentialOptions = {} as IAdditionalCredentialOptions
 
 		if (authentication === 'feishuCredentialsApi') {
 			const credentials = await this.getCredentials(authentication);
-
-			console.log('credentials.accessToken', credentials.accessToken);
 
 			options.baseURL = `https://${credentials.baseUrl}`;
 
