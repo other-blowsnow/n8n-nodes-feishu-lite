@@ -51,7 +51,6 @@
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
     "express": "^4.21.2",
     "form-data": "^4.0.1",
-    "glob": "^10.4.5",
     "gulp": "^4.0.2",
     "prettier": "^3.3.2",
     "require-glob": "^4.1.0",
@@ -61,6 +60,7 @@
     "n8n-workflow": "^1.115.0"
   },
   "dependencies": {
+    "glob": "^10.4.5",
     "xml-js": "^1.6.11"
   }
 }
