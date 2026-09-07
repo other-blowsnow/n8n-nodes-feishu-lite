@@ -38,6 +38,8 @@ class RequestUtils {
 
 			return this.helpers.requestOAuth2
 				.call(this, authentication, options, oauth2)
+		}else if (authentication === 'feishuBotWebhookApi') {
+			throw new Error('自定义机器人 Webhook 凭证仅支持“消息 > 机器人推送”操作');
 		}
 
 		return this.helpers.requestWithAuthentication

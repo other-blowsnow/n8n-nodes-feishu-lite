@@ -49,6 +49,16 @@ export class FeishuNode implements INodeType {
 					},
 				},
 			},
+			{
+				name: 'feishuBotWebhookApi',
+				displayName: '自定义机器人 Webhook 凭证',
+				required: true,
+				displayOptions: {
+					show: {
+						authentication: ['feishuBotWebhookApi'],
+					},
+				},
+			},
 		],
 		properties: [
 			{
@@ -63,6 +73,10 @@ export class FeishuNode implements INodeType {
 					{
 						name: '应用级别凭证',
 						value: 'feishuCredentialsApi',
+					},
+					{
+						name: '自定义机器人 Webhook 凭证',
+						value: 'feishuBotWebhookApi',
 					},
 				],
 				default: 'feishuCredentialsApi',

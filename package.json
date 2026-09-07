@@ -38,6 +38,7 @@
     "n8nNodesApiVersion": 1,
     "credentials": [
       "dist/credentials/FeishuCredentialsApi.credentials.js",
+      "dist/credentials/FeishuBotWebhookApi.credentials.js",
       "dist/credentials/FeishuOauth2Api.credentials.js"
     ],
     "nodes": [
